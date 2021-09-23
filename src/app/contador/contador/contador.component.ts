@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
     <button (click)='sumaResta(+base);'>+1</button>
     <span>{{ contador }}</span>
-    <button (click)='sumaResta(-base);'>-1</button>
+    <button (click)='sumaResta(-base);'>-1 </button>
     `,
     styleUrls: ['../../app.component.css']
 })

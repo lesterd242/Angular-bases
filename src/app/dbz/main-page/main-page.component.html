@@ -1,0 +1,28 @@
+<p>Dragon Ball Z</p>
+<hr>
+
+<div class='row'>
+    <div class='col'>
+        <!--
+            Mandando un campo del componente, de este componente hacia otro componente,
+            el ciclo de vida de angular detecta que hay un cambio y vuelve a enviar el dato 
+            hacia el otro componente.
+        -->
+        <app-personajes> 
+        </app-personajes>
+    </div>
+
+    <div class='col'>
+
+        <!--
+            Le decimos que nuevo en la clase destino va a ser igual al nuevo de la clase de origen,
+            de esta manera los enlazamos, se puede agregar un alias para cambiar el destino,
+            tambiem implementa un evento de tipo eventEmmitter que recibe un objeto <T> y se le enviara 
+            al metodo agregarNuevoPersonaje
+        -->
+
+        <app-agregar [nuevo]="nuevo">
+        </app-agregar>
+    </div>
+</div>
+

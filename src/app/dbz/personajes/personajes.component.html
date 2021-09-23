@@ -1,0 +1,9 @@
+<!--
+   los pipes ayudan a formatear los valores de cara a la vista del usuario
+-->
+
+<h3>Personajes</h3>
+<hr>
+<ul>
+    <li *ngFor="let personaje of personajes">{{ personaje.nombre }} - {{ personaje.poder | number }}</li>
+</ul> 

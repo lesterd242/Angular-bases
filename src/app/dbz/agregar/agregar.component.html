@@ -1,0 +1,26 @@
+<!--
+    one way data binding, solo escucha
+-->
+<h3>Agregar {{ nuevo.nombre }}</h3>
+<hr>
+
+<form (ngSubmit)="agregar()">
+    <!--
+        enlazando a los campos de la clase mediante ngModel, para que funcione 
+        ngModel el input tiene que tener el name, y para que pueda acceder al argumento y modificarlo,
+        el ngmodel dentro de los corchetes debe de estar en parentesis, esto se conoce como two way data binding
+    -->
+    <input type="text" placeholder="nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+    <!-- 
+
+        Los parentesis en la etiqueta indican un evento,
+        para mandar el evento usamos $event.
+        Los corchetes se usan para acceder al valor
+
+        [value]='nuevo.nombre' (input)='cambiarNombre($event)', otra forma de setear los datos en el 
+        componente
+    -->
+    <input type="number" placeholder="poder" name="poder" [(ngModel)]="nuevo.poder">
+
+    <button>Agregar</button>
+</form>

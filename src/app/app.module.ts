@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ContadorModule } from './contador/contador.module';
-import { ContadorComponent } from './contador/contador/contador.component';
+import { DbzModule } from './dbz/dbz.module';
 import { HeroesModule } from './heroes/heroes.module';
 
 
@@ -19,7 +19,8 @@ pueden tener los componentes que conforman al modulo
   imports: [
     BrowserModule, 
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
